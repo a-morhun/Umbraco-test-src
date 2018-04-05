@@ -1,0 +1,8 @@
+﻿@inherits UmbracoTemplatePage
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+        <h2>@Umbraco.AssignedContentItem.GetPropertyValue("title", Umbraco.AssignedContentItem.Name)</h2> @*Umbraco.Field("title", altFieldName = "pageName")*@
+        @Html.Raw(Umbraco.Field("subTitle"))
+    </div>
+</div>
